@@ -1,4 +1,4 @@
-/*! Verxee UI hub bridge | MIT | github.com/jurapascal/verxee-ui
+/*! Verxee UI hub bridge | MIT | github.com/IT-Brno/verxee-ui
  * Standalone (no Verxee UI needed) for server-rendered apps that run inside a hub (e.g. alba-rosa.cz/hub).
  *   <script src="hub-bridge.js" data-hub="https://alba-rosa.cz" data-logout="logout.php" defer></script>
  * Optional: data-login-required on the tag (sign-in page after a failed silent sign-in) tells the hub to sign the person in;

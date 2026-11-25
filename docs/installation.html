@@ -19,7 +19,7 @@
   <div class="brand me-3"><a href="index.html"><span class="brand-logo"><i class="ti ti-layout-dashboard"></i></span><span>Verxee UI</span><span class="muted fs-sm hide-xs">v2.5.1</span></a></div>
   <div class="d-flex align-items-center gap-2 ms-auto">
     <a class="btn btn-ghost-secondary btn-sm" href="../index.html"><i class="ti ti-player-play"></i><span class="hide-xs"> Demo</span></a>
-    <a class="btn btn-ghost-secondary btn-sm" href="https://github.com/jurapascal/verxee-ui"><i class="ti ti-brand-github"></i><span class="hide-xs"> GitHub</span></a>
+    <a class="btn btn-ghost-secondary btn-sm" href="https://github.com/IT-Brno/verxee-ui"><i class="ti ti-brand-github"></i><span class="hide-xs"> GitHub</span></a>
     <button class="btn btn-ghost-secondary btn-sm" type="button" data-theme-toggle aria-label="Toggle theme"><i class="ti ti-moon"></i></button>
   </div>
 </nav>
@@ -31,22 +31,22 @@
 
 <h2>1 · CDN (jsDelivr)</h2>
 <p>Pin a version tag so updates never surprise you; use <code>@main</code> for bleeding edge.</p>
-<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.3.1/vendor/coreui/coreui.min.css"&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.3.1/vendor/tabler-icons/css/tabler-icons.min.css"&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.3.1/dist/verxee-ui.min.css"&gt;</code></pre>
+<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.3.1/vendor/coreui/coreui.min.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.3.1/vendor/tabler-icons/css/tabler-icons.min.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.3.1/dist/verxee-ui.min.css"&gt;</code></pre>
 
 <p>With Subresource Integrity (the browser refuses a file whose hash does not match):</p>
-<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/dist/verxee-ui.min.css"
-      integrity="sha384-expFbaZEP+OkNQRr1Dc9oQh4B+Rbt6DABq2cgJbIDiKCM9g/eiB7Qwf7wf9iEzIO" crossorigin="anonymous"&gt;
-&lt;script src="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/dist/verxee-ui.min.js"
-        integrity="sha384-baYmA7pTkG0n+zerFsL6mzjnINfGav3J7HHic4nX6BomssslC/8npLrDQM7FZJEt" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+<pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/dist/verxee-ui.min.css"
+      integrity="sha384-N1cklfiSj00TM9RqPfalotUWv/Eqv4fwLiKJXJnzf3simmuBn48O9fqZLbMjOlmJ" crossorigin="anonymous"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/dist/verxee-ui.min.js"
+        integrity="sha384-JYqG4QBf/qA/xzwBg2ANTWhMweEtrS9UIMH0wuwZWOmfi4azuIoOfaNPjmwxQ66r" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
 
 <h2>2 · Self-host</h2>
 <p>Clone or download the repository and copy <code>dist/</code>, <code>fonts/</code> and <code>vendor/</code> next to your app. Fonts are resolved relative to the CSS file (<code>../fonts/</code>), so keep that folder layout. Self-hosting is CSP-friendly and works offline (PWA).</p>
-<pre><code>git clone https://github.com/jurapascal/verxee-ui.git</code></pre>
+<pre><code>git clone https://github.com/IT-Brno/verxee-ui.git</code></pre>
 
 <h2>3 · npm / build tools</h2>
-<pre><code>npm install github:jurapascal/verxee-ui @coreui/coreui</code></pre>
+<pre><code>npm install github:IT-Brno/verxee-ui @coreui/coreui</code></pre>
 <pre><code>import '@coreui/coreui/dist/css/coreui.min.css';
 import 'verxee-ui/dist/verxee-ui.min.css';
 import 'verxee-ui';              // sets up window.VerxeeUI</code></pre>

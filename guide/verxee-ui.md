@@ -9,11 +9,11 @@ Load **CoreUI first, then Verxee UI**, always from a **pinned version tag** (nev
 
 ```html
 <html lang="cs" data-coreui-theme="light">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/vendor/coreui/coreui.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/vendor/tabler-icons/css/tabler-icons.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/dist/verxee-ui.min.css">
-<script defer src="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/vendor/coreui/coreui.bundle.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/dist/verxee-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/vendor/coreui/coreui.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/vendor/tabler-icons/css/tabler-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/dist/verxee-ui.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/vendor/coreui/coreui.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/dist/verxee-ui.min.js"></script>
 ```
 
 - Company installations **self-host** the same files (copy `dist/`, `vendor/`, `fonts/` of the pinned tag into the app), so the app works without a CDN and under a strict CSP. From the CDN, use the SRI hashes in `dist/sri.json`.

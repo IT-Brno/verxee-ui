@@ -11,7 +11,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const r = (p) => readFileSync(join(root, p), 'utf8');
 const w = (p, s) => { mkdirSync(dirname(join(root, p)), { recursive: true }); writeFileSync(join(root, p), s); };
 const pkg = JSON.parse(r('package.json'));
-const banner = `/*! Verxee UI v${pkg.version} | MIT | github.com/jurapascal/verxee-ui */\n`;
+const banner = `/*! Verxee UI v${pkg.version} | MIT | github.com/IT-Brno/verxee-ui */\n`;
 
 // ── CSS ──
 const bundle = ['fonts', 'tokens', 'components', 'layout'].map((n) => r(`css/${n}.css`).trim()).join('\n\n') + '\n';

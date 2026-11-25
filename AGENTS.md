@@ -84,11 +84,11 @@ Definitions live in [`.claude/agents/`](.claude/agents/). They are Claude Code s
 
 ## Working in an app repo
 
-This guide lives in `jurapascal/verxee-ui` (local clone `~/Desktop/verxee-ui`). Every app repo keeps its own **short** `AGENTS.md` with only what is specific to it:
+This guide lives in `IT-Brno/verxee-ui` (local clone `~/Desktop/verxee-ui`). Every app repo keeps its own **short** `AGENTS.md` with only what is specific to it:
 
 ```md
 # <App> — instructions for AI agents
-Family rules, phases and gates: https://github.com/jurapascal/verxee-ui/blob/main/AGENTS.md
+Family rules, phases and gates: https://github.com/IT-Brno/verxee-ui/blob/main/AGENTS.md
 - Current phase: <0–6>, version <X.Y.Z>, version constant in <file>
 - Delivery: <our hosting from main | company installations from Releases>
 - Tests: <command>, needs <MariaDB on 127.0.0.1:3417 …>

@@ -6,7 +6,7 @@ tight 4 px spacing grid, 12 px card radius, Inter, and a proper dark mode. It is
 
 It powers a family of admin apps (e-shop admin, planner, ERP/fulfilment, internal tools).
 
-**Documentation:** https://jurapascal.github.io/verxee-ui/docs/ · **Live demo:** https://jurapascal.github.io/verxee-ui/
+**Documentation:** https://it-brno.github.io/verxee-ui/docs/ · **Live demo:** https://it-brno.github.io/verxee-ui/
 
 ## What you get
 
@@ -29,11 +29,11 @@ It powers a family of admin apps (e-shop admin, planner, ERP/fulfilment, interna
 Straight from GitHub via [jsDelivr](https://www.jsdelivr.com/) — no download, no build:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/vendor/coreui/coreui.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/vendor/tabler-icons/css/tabler-icons.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/dist/verxee-ui.min.css">
-<script defer src="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/vendor/coreui/coreui.bundle.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/jurapascal/verxee-ui@v2.5.1/dist/verxee-ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/vendor/coreui/coreui.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/vendor/tabler-icons/css/tabler-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/dist/verxee-ui.min.css">
+<script defer src="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/vendor/coreui/coreui.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/IT-Brno/verxee-ui@v2.5.1/dist/verxee-ui.min.js"></script>
 ```
 
 Set `<html data-coreui-theme="light">` and you are done. `css/verxee-ui.css` is fonts + tokens + components + layout in one file;
@@ -54,9 +54,9 @@ VerxeeUI.app({
 });
 ```
 
-Sign-in screen, sign-out, 2FA step, session expiry, permissions and the same *blocks* in topbar, sidebar and page — see [Blocks](https://jurapascal.github.io/verxee-ui/docs/blocks.html), [Login & sessions](https://jurapascal.github.io/verxee-ui/docs/authentication.html) and [Security](https://jurapascal.github.io/verxee-ui/docs/security.html). The UI is secure by construction (sanitized HTML, CSP-safe, CSRF-aware), but authentication itself is enforced by **your server**; `examples/server.mjs` is a reference implementation.
+Sign-in screen, sign-out, 2FA step, session expiry, permissions and the same *blocks* in topbar, sidebar and page — see [Blocks](https://it-brno.github.io/verxee-ui/docs/blocks.html), [Login & sessions](https://it-brno.github.io/verxee-ui/docs/authentication.html) and [Security](https://it-brno.github.io/verxee-ui/docs/security.html). The UI is secure by construction (sanitized HTML, CSP-safe, CSRF-aware), but authentication itself is enforced by **your server**; `examples/server.mjs` is a reference implementation.
 
-**One sign-in for many apps:** `app({ hub: { origin: 'https://alba-rosa.cz' }, auth: { providers: ['hub', 'google'] } })` — inside the hub the app signs in silently, outside it shows *Sign in with Alba Rosa Hub / Google*. Server side: `server/php/VerxeeSso.php` (OpenID Connect, no dependencies). See [Hub & single sign-on](https://jurapascal.github.io/verxee-ui/docs/sso.html).
+**One sign-in for many apps:** `app({ hub: { origin: 'https://alba-rosa.cz' }, auth: { providers: ['hub', 'google'] } })` — inside the hub the app signs in silently, outside it shows *Sign in with Alba Rosa Hub / Google*. Server side: `server/php/VerxeeSso.php` (OpenID Connect, no dependencies). See [Hub & single sign-on](https://it-brno.github.io/verxee-ui/docs/sso.html).
 
 **Test roles without signing in:** `app({ rolePreview: { initial: 'admin', roles: { admin: { label: 'Admin', permissions: ['*'] }, viewer: { label: 'Viewer', permissions: ['orders.view'] } } } })` puts a role dropdown in the topbar — pick a role and the whole UI re-renders as that role. First versions of every app should use this; see [AGENTS.md](AGENTS.md).
 
@@ -68,7 +68,7 @@ if (await VerxeeUI.confirm({ title: 'Delete?', variant: 'danger' })) { /* … */
 VerxeeUI.theme.toggle();
 ```
 
-Full reference in the [docs](https://jurapascal.github.io/verxee-ui/docs/javascript.html). Build from source: `node scripts/build.mjs`; see [CONTRIBUTING](CONTRIBUTING.md). **AI agents: read [AGENTS.md](AGENTS.md) first.**
+Full reference in the [docs](https://it-brno.github.io/verxee-ui/docs/javascript.html). Build from source: `node scripts/build.mjs`; see [CONTRIBUTING](CONTRIBUTING.md). **AI agents: read [AGENTS.md](AGENTS.md) first.**
 
 ## Theming
 
